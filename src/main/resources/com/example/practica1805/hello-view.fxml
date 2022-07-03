@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:id="panel" alignment="CENTER" prefHeight="687.0" prefWidth="720.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica1805.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+   
+       <Label fx:id="welcomeText" />
+      <ImageView fx:id="iv1" fitHeight="127.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/s_45082_1420_2012_1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iv2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/trump.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iv3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/IMG_20211124_182037__01.jpg" />
+         </image>
+      </ImageView>
+       <Button fx:id="btn_change" onAction="#changeImage" text="Cambiar imagenes" />
+      <Button fx:id="btn_date" mnemonicParsing="false" onAction="#datetime" text="Fecha y hora actual" />
+      <Label fx:id="lbl_datetime" prefHeight="17.0" prefWidth="143.0" text="..." />
+      <Button fx:id="btn_raiz" mnemonicParsing="false" onAction="#raiz_cuadrada" text="raiz cuadrada" />
+      <TextField fx:id="tf_raiz" />
+      <Label fx:id="lbl_raiz" prefHeight="17.0" prefWidth="143.0" text="..." />
+      <Button fx:id="btn_fondo" mnemonicParsing="false" onAction="#cambiar_fondo" text="cambiar fondo" />
+   </children>
+</VBox>
